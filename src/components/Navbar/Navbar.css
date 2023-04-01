@@ -1,0 +1,33 @@
+.nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 7vh;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+}
+
+.nav-container ul {
+    margin: 0 5rem;
+    display: flex;
+}
+
+ul a {
+    list-style-type: none;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+ul a:hover {
+    /* background-color: aqua; */
+    /* height: 100%; */
+    color: red;
+    border-bottom: 2px solid black;
+}
+
+
+
+.nav-logo {
+    margin-left: 2rem;
+    padding: 0;
+    height: 100%;
+}
