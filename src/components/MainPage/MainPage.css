@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    color: white
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    padding: 0 250px;
+}
+
+#main-banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 1500px; */
+    margin: 0 auto;
+    /* padding: 0 150px; */
+    /* align-items: flex-start; */
+}
+
+#main-banner h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+#main-banner h3 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#main-banner p {
+    font-size: 1.25rem;
+    width: 60%;
+    margin: 1rem 0;
+}
+
+#main-banner button {
+    margin-right: .5rem;
+}
+
+.banner-buttons {
+    display: flex;
+}
+
+.arrow-down {
+    display: inline;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#about-section {
+    height: 70vh;
+}
+
+#project-section {
+    height: 70vh;
+}
+
+
+#contact-section {
+    height: 70vh;
+}
+
+.social-icons {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: auto;
+    bottom: 0px;
+    margin: 1rem;
+    list-style-type: none;
+
+}

@@ -1,0 +1,17 @@
+.outline {
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+}
+
+
+.light {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+}
