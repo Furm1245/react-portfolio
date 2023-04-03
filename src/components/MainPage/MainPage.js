@@ -4,6 +4,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faJ } from '@fortawesome/free-solid-svg-icons'
+import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { faM } from '@fortawesome/free-solid-svg-icons'
 import Button from '../UI/Button'
 import image0 from '../assets/image0.jpeg'
 
@@ -35,11 +42,47 @@ const MainPage = () => {
                     </div>
                 </section>
                 <section id='about-section'>
-                    <h2>About</h2>
+                    <h2>About Me</h2>
                     <div className='about-container'>
                         <div>
-                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                Lorem ipsum may be used as a placeholder before final copy is available. </p>
+                            <div className='about-info'>
+                                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                    Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                            </div>
+                            <div className='about-icons'>
+                                <div>
+                                    <FontAwesomeIcon icon={faHtml5} />
+                                    <p>Html 5</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faCss3Alt} />
+                                    <p>Css 3</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faJ} />
+                                    <p>Javascript</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faReact} />
+                                    <p>React Js</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faNodeJs} />
+                                    <p>Node Js</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faM} />
+                                    <p>MongoDb</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faGithub} />
+                                    <p>Git</p>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faBootstrap} />
+                                    <p>Bootstrap</p>
+                                </div>
+                            </div>
                         </div>
                         <img src={image0} alt='Furman walker'></img>
                     </div>
