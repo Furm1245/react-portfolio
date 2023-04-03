@@ -5,6 +5,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import Button from '../UI/Button'
+import image0 from '../assets/image0.jpeg'
 
 
 const MainPage = () => {
@@ -28,11 +29,18 @@ const MainPage = () => {
                         </Button>
                     </div>
                     <div className='arrow-down'>
-                        <FontAwesomeIcon icon={faAngleDown} />
+                        <FontAwesomeIcon icon={faAngleDown} bounce />
                     </div>
                 </section>
                 <section id='about-section'>
                     <h2>About</h2>
+                    <div className='about-container'>
+                        <div>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                Lorem ipsum may be used as a placeholder before final copy is available. </p>
+                        </div>
+                        <img src={image0} alt='Furman walker'></img>
+                    </div>
                 </section>
                 <section id='project-section'>
                     <h2>Project</h2>
