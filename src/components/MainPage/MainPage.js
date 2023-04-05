@@ -1,16 +1,10 @@
 import './MainPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
-import { faJ } from '@fortawesome/free-solid-svg-icons'
-import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
-import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
-import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
-import { faReact } from '@fortawesome/free-brands-svg-icons'
-import { faM } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faM, faJ } from '@fortawesome/free-solid-svg-icons'
+import { faNodeJs, faHtml5, faBootstrap, faCss3Alt, faReact, faLinkedin, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
 import Button from '../UI/Button'
 import image0 from '../assets/image0.jpeg'
 import Carousel from '../UI/Carousel'
@@ -89,11 +83,39 @@ const MainPage = () => {
                     </div>
                 </section>
                 <section id='project-section'>
-                    <h2>Project</h2>
+                    <h2>Projects</h2>
                     <Carousel />
                 </section>
                 <section id='contact-section'>
-                    <h2>Contact</h2>
+                    <h2>Contact Me</h2>
+                    <div className='contact-container'>
+                        <div className='contact-text'>
+                            <h3>Lorem ipsum</h3>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                        </div>
+                        <Form>
+                            <Row>
+                                <Col>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>First Name</Form.Label>
+                                        <Form.Control type="text" placeholder="your name" />
+                                    </Form.Group>
+                                </Col>
+                                <Col>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control type="email" placeholder="name@example.com" required />
+                                    </Form.Group>
+                                </Col>
+                            </Row>
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                <Form.Label>Example textarea</Form.Label>
+                                <Form.Control as="textarea" placeholder="Your message" rows={4} required />
+                            </Form.Group>
+                            <button>Submit Me</button>
+                        </Form>
+                    </div>
                 </section>
             </main>
             <ul className='social-icons'>

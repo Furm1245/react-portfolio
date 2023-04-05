@@ -1,0 +1,15 @@
+.project-container {
+    display: flex;
+    width: 100%;
+}
+
+.project-image img {
+    width: 900px;
+    height: auto;
+}
+
+.project-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}

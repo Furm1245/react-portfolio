@@ -1,11 +1,13 @@
 import './Carousel.css'
 import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Button from '../UI/Button'
 
 const dataSlider = [
     {
         id: 1,
-        title: "React Indeed",
+        title: "lorem ipsum",
         description: 'lorem'
     },
 
@@ -18,22 +20,27 @@ const Carousel = () => {
 
     return (
         <>
-            {dataSlider.map((obj, index) => {
-                return (
-                    <div >
-                        <div>
-                            <img src={process.env.PUBLIC_URL + `/assets/placeholder.webp`} alt='projects'></img>
-                        </div>
-                        <div>
-                            {obj.title}
-                        </div>
-                        <div>
-                            {obj.description}
-                        </div>
-                    </div>
-                )
-            })}
+            <FontAwesomeIcon icon={faArrowLeft} />
+            <FontAwesomeIcon icon={faArrowRight} />
             <div className='project-container'>
+                {dataSlider.map((obj, index) => {
+                    return (
+                        <div key={obj.id}>
+                            <div
+                                className='project-image'
+                            >
+
+                                <img src={process.env.PUBLIC_URL + `/assets/img${currentIndex}.png`} alt='projects'></img>
+                            </div>
+                            <div>
+                                {obj.title}
+                            </div>
+                            <div>
+                                {obj.description}
+                            </div>
+                        </div>
+                    )
+                })}
 
             </div>
             <div className='project-buttons'>

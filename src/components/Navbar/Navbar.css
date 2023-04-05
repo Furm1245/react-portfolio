@@ -32,5 +32,6 @@ ul a:hover {
 .nav-logo {
     margin-left: 2rem;
     padding: 0;
-    height: 100%;
+    /* height: 100%; */
+    align-items: center;
 }

@@ -59,6 +59,14 @@ main {
     height: 85vh;
 }
 
+#about-section h2 {
+    text-align: start;
+    border-bottom: 2px solid white;
+    padding: .5rem 0;
+    width: 45%;
+}
+
+
 .about-container {
     display: flex;
 }
@@ -90,19 +98,37 @@ img {
     height: 80vh;
 }
 
-.project-container {
-    display: flex;
-}
-
-.project-buttons {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
+#project-section h2 {
+    text-align: end;
+    border-bottom: 2px solid white;
+    padding: .5rem 0;
+    width: 100%;
 }
 
 
 #contact-section {
     height: 70vh;
+}
+
+#contact-section h2 {
+    text-align: start;
+    border-bottom: 2px solid white;
+    padding: .5rem 0;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contact-text {
+    width: 100%;
+    padding: 1rem;
+}
+
+#contact-section form {
+    width: 100%;
 }
 
 .social-icons {
