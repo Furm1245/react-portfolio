@@ -13,6 +13,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faM } from '@fortawesome/free-solid-svg-icons'
 import Button from '../UI/Button'
 import image0 from '../assets/image0.jpeg'
+import Carousel from '../UI/Carousel'
 
 
 const MainPage = () => {
@@ -89,21 +90,7 @@ const MainPage = () => {
                 </section>
                 <section id='project-section'>
                     <h2>Project</h2>
-                    <div className='project-container'>
-                        <div>
-                            <img src={process.env.PUBLIC_URL + `/assets/placeholder.webp`} alt='projects'></img>
-                        </div>
-                        <div>
-                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                Lorem ipsum may be used as a placeholder before final copy is available.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                        </div>
-                    </div>
-                    <div className='project-buttons'>
-                        <Button variant={'outline'} text={'Previous'}>
-                        </Button>
-                        <Button variant={'outline'} text={'Next'}>
-                        </Button>
-                    </div>
+                    <Carousel />
                 </section>
                 <section id='contact-section'>
                     <h2>Contact</h2>
