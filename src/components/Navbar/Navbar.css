@@ -5,6 +5,7 @@
     justify-content: space-between;
     height: 7vh;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+    z-index: 15;
 }
 
 .nav-container ul {
@@ -13,23 +14,24 @@
 }
 
 ul a {
+    display: flex;
     list-style-type: none;
     padding: 1.5rem;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+    align-items: center;
 }
 
 ul a:hover {
-    /* background-color: aqua; */
-    /* height: 100%; */
-    color: red;
+    color: gold;
     border-bottom: 2px solid white;
 }
 
 
 
 .nav-logo {
+    display: flex;
     margin-left: 2rem;
     padding: 0;
     /* height: 100%; */

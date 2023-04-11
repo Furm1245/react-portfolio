@@ -1,15 +1,54 @@
 .project-container {
-    display: flex;
     width: 100%;
+    height: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+
 }
 
 .project-image img {
-    width: 900px;
+    width: 100%;
     height: auto;
 }
 
-.project-buttons {
-    margin-top: 1rem;
+.project-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    color: white;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0));
+}
+
+.project-title {
+    font-size: 2rem;
+}
+
+.project-d {
+    padding-top: 1.75rem;
+}
+
+.extra-text {
+    padding-top: 1.25rem;
+}
+
+.project-arrows {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.project-section {
+    display: flex;
 }

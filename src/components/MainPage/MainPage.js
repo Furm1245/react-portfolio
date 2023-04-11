@@ -1,16 +1,46 @@
 import './MainPage.css'
+import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faM, faJ } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faM, faJ, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { faNodeJs, faHtml5, faBootstrap, faCss3Alt, faReact, faLinkedin, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Button from '../UI/Button'
 import image0 from '../assets/image0.jpeg'
-import Carousel from '../UI/Carousel'
+import netflix from '../assets/netflix.PNG'
+import indeed from '../assets/indeed.PNG'
+import placeholder from '../assets/placeholder.webp'
+// import Carousel from '../UI/Carousel'
 
 
 const MainPage = () => {
+
+    const [visible, setVisible] = useState(true)
+    const [isMobile, setIsMobile] = useState(false);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+
+        handleResize(); // Initial check
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+
+    }, [])
+
+
+
+
+    window.addEventListener('scroll', (event) => {
+        setVisible(false)
+    });
+
 
 
     return (
@@ -32,17 +62,19 @@ const MainPage = () => {
                         <Button variant={'light'} text={'View My Projects'}>
                         </Button>
                     </div>
-                    <div className='arrow-down'>
-                        <FontAwesomeIcon icon={faAngleDown} bounce />
+                    <div className='arrow-down' style={{ display: visible ? 'block' : 'none' }}>
+                        <a href='#about-section'>
+                            <FontAwesomeIcon icon={faAngleDown} bounce />
+                        </a>
                     </div>
                 </section>
                 <section id='about-section'>
                     <h2>About Me</h2>
                     <div className='about-container'>
-                        <div>
-                            <div className='about-info'>
-                                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                    Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+
+                        <div className='about-info'>
+                            <div className='about-description'>
+                                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
                             </div>
                             <div className='about-icons'>
                                 <div>
@@ -83,8 +115,113 @@ const MainPage = () => {
                     </div>
                 </section>
                 <section id='project-section'>
-                    <h2>Projects</h2>
-                    <Carousel />
+                    <h2>Projects I've Worked On</h2>
+                    <div>
+                        {!isMobile &&
+                            <div>
+                                <div className='project-card'>
+                                    <div className='project-image'>
+                                        <img src={netflix} alt='website similar to netflix'></img>
+                                    </div>
+                                    <div className='project-info'>
+                                        <div>
+                                            <h3>React Movies</h3>
+                                        </div>
+                                        <div className='project-description'>
+                                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                                Lorem ipsum may be used as a placeholder before final copy is available.
+                                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                        </div>
+                                        <div className='project-icons'>
+                                            <ul className='project-icons'>
+                                                <li>
+                                                    <h5>React Js</h5>
+                                                </li>
+                                                <li>
+                                                    <h5>HTML/Javascript/CSS</h5>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div>
+                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
+                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='project-card'>
+                                    <div className='project-info'>
+                                        <div>
+                                            <h3>React Indeed</h3>
+                                        </div>
+                                        <div className='project-description'>
+                                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                                Lorem ipsum may be used as a placeholder before final copy is available.
+                                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                        </div>
+                                        <ul className='project-icons'>
+                                            <li>
+                                                <h5>React Js</h5>
+                                            </li>
+                                            <li>
+                                                <h5>HTML/Javascript/CSS</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Node Js</h5>
+                                            </li>
+                                            <li>
+                                                <h5>MongoDb</h5>
+                                            </li>
+
+                                        </ul>
+                                        <div>
+                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
+                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                        </div>
+                                    </div>
+                                    <div className='project-image'>
+                                        <img src={indeed} alt='website similar to indeed'></img>
+                                    </div>
+                                </div>
+                                <div className='project-card'>
+                                    <div className='project-image'>
+                                        <img src={placeholder} alt='nothing'></img>
+                                    </div>
+                                    <div className='project-info'>
+                                        <div>
+                                            <h3>Coming Soon</h3>
+                                        </div>
+                                        <div className='project-description'>
+                                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                                                Lorem ipsum may be used as a placeholder before final copy is available.
+                                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                        </div>
+                                        {/* <div>
+                                            <ul>
+                                                <li>
+                                                </li>
+                                                <li>
+                                                </li>
+                                            </ul>
+                                            <h4>project icons</h4>
+                                        </div> */}
+                                        <div>
+                                            <h5>project links</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+
+                        {isMobile &&
+
+                            <h2>We mobile</h2>
+
+                        }
+
+
+                    </div>
                 </section>
                 <section id='contact-section'>
                     <h2>Contact Me</h2>
@@ -119,9 +256,9 @@ const MainPage = () => {
                 </section>
             </main>
             <ul className='social-icons'>
-                <li><FontAwesomeIcon icon={faGithub} /></li>
-                <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                <li><FontAwesomeIcon icon={faFacebook} /></li>
+                <a href='https://github.com/Furm1245' target='__blank'><li><FontAwesomeIcon icon={faGithub} /></li></a>
+                <a href='https://www.linkedin.com/in/furman-walker-87b483234/?trk=public-profile-join-page' target='__blank'> <li><FontAwesomeIcon icon={faLinkedin} /></li></a>
+                <a href='https://www.facebook.com' target='__blank'><li><FontAwesomeIcon icon={faFacebook} /></li></a>
             </ul>
         </>
 
