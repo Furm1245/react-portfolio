@@ -203,6 +203,7 @@ main {
     margin-top: 1rem;
     padding: 0;
     text-decoration: none;
+    color: white;
 }
 
 .social-icons a:hover {

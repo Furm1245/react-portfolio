@@ -1,3 +1,7 @@
+.body-lock {
+    overflow: hidden;
+}
+
 .nav-container {
     display: flex;
     position: fixed;
@@ -6,6 +10,16 @@
     height: 7vh;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
     z-index: 15;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container a:hover {
+    color: gold;
+    border-bottom: 2px solid white;
 }
 
 .nav-logo {
@@ -20,7 +34,7 @@
     display: flex;
 }
 
-.nav-links a {
+.nav-links {
     display: flex;
     list-style-type: none;
     padding: 1.5rem;
@@ -30,9 +44,8 @@
     align-items: center;
 }
 
-.nav-links a:hover {
-    color: gold;
-    border-bottom: 2px solid white;
+.list-items {
+    margin: 1rem 1.5rem;
 }
 
 .hamburger {
@@ -45,27 +58,30 @@
         font-size: 2rem;
         margin: .5rem;
         cursor: pointer;
+        z-index: 30;
     }
 
-    .nav-links a {
+    .nav-links {
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
         right: 0;
-        top: 60px;
+        top: 0;
         margin: 0;
-        width: 0px;
+        width: 0;
+        padding: 0;
         background-color: rgb(12, 12, 12);
         color: white;
-        height: calc(80vh - 60px);
-        transition: all 0.1s ease-in;
+        height: 30vh;
         visibility: hidden;
         text-align: center;
     }
 
-    .nav-links a.active {
-        width: 80%;
+    .nav-links.active {
+        width: 100%;
+        transition: all 0.3s ease-in;
+        margin: 0;
         z-index: 15;
         visibility: visible;
     }
