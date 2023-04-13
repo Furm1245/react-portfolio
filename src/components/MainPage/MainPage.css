@@ -64,7 +64,7 @@ main {
 }
 
 #about-section {
-    height: 75vh;
+    margin-bottom: 5rem;
 }
 
 #about-section h2 {
@@ -162,7 +162,6 @@ main {
 
 
 #contact-section {
-    height: 70vh;
     padding-top: 4rem;
 }
 
@@ -256,5 +255,39 @@ main {
         padding: 0 100px;
     }
 
+}
+
+@media all and (max-width: 800px) {
+
+    main {
+        padding: 0 75px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .social-icons a {
+        display: none;
+    }
+
+    #about-section img {
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 500px) {
+    main {
+        padding: 0 15px;
+    }
 
 }
