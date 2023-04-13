@@ -9,10 +9,13 @@ const Navbar = () => {
     const [show, setShow] = useState(false)
 
 
+
     const onShow = () => {
         setShow(!show)
         if (!show) {
-            document.body.classList.add('body-lock'); // Add body-lock class to lock scrolling
+            if (window.innerWidth <= 768) {
+                document.body.classList.add('body-lock'); // Add body-lock class to lock scrolling if screen is mobile view
+            }
         } else {
             document.body.classList.remove('body-lock'); // Remove body-lock class to unlock scrolling
         }

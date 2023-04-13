@@ -1,0 +1,20 @@
+.card-container {
+    margin: 2rem 0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.25rem;
+}
+
+.card-icons li {
+    padding-right: 1rem;
+}
+
+.card-icons {
+    list-style-type: none;
+    display: flex;
+    color: gold;
+    flex-wrap: wrap;
+    padding-left: 0;
+}

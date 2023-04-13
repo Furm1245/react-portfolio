@@ -11,9 +11,9 @@ main h2 {
 
 main {
     width: 100%;
-    max-width: 2000px;
+    max-width: 1700px;
     margin: 0 auto;
-    padding: 0 250px;
+    padding: 0 150px;
 }
 
 #main-banner {
@@ -71,7 +71,7 @@ main {
     text-align: start;
     border-bottom: 1px solid white;
     padding: .5rem 0;
-    width: 45%;
+    width: 65%;
 }
 
 .about-container {
@@ -97,7 +97,6 @@ main {
 .about-icons svg {
     font-size: 3rem;
     text-align: start;
-    /* padding: 1rem; */
 }
 
 #about-section img {
@@ -107,7 +106,6 @@ main {
 }
 
 #project-section {
-    height: 150vh;
     position: relative;
 }
 
@@ -130,7 +128,6 @@ main {
 .project-image img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
     background-color: black;
 }
 
@@ -146,16 +143,17 @@ main {
     display: flex;
     color: gold;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .project-icons li {
-    padding: 0 1rem;
+    padding-right: 1rem;
 }
 
 .project-info a {
     color: white;
     font-size: 1.25rem;
-    padding-right: .5rem;
+    padding-right: 1rem;
 }
 
 .project-info a:hover {
@@ -189,7 +187,7 @@ main {
 }
 
 .social-icons {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -235,12 +233,6 @@ main {
 
 @media all and (max-width: 1250px) {
 
-
-    main {
-        padding: 0 150px;
-    }
-
-
     #main-banner p {
         font-size: 1.25rem;
         width: 80%;
@@ -257,4 +249,12 @@ main {
         max-height: 300px;
         box-shadow: 5px 5px 20px white;
     }
+}
+
+@media all and (max-width: 1000px) {
+    main {
+        padding: 0 100px;
+    }
+
+
 }

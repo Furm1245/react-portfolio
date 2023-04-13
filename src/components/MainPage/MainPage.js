@@ -10,6 +10,7 @@ import Button from '../UI/Button'
 import image0 from '../assets/image0.jpeg'
 import netflix from '../assets/netflix.PNG'
 import indeed from '../assets/indeed.PNG'
+import Card from '../UI/Card'
 import placeholder from '../assets/placeholder.webp'
 // import Carousel from '../UI/Carousel'
 
@@ -36,12 +37,9 @@ const MainPage = () => {
 
 
 
-
-    window.addEventListener('scroll', (event) => {
+    window.addEventListener('scroll', () => {
         setVisible(false)
     });
-
-
 
     return (
         <>
@@ -52,8 +50,7 @@ const MainPage = () => {
                         <h3>FrontEnd Developer</h3>
                     </div>
                     <div>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                            Lorem ipsum may be used as a placeholder before final copy is available. </p>
+                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
                     </div>
                     <div className='banner-buttons'>
                         <Button variant={'outline'} text={'Check Out My Github'}>
@@ -115,7 +112,7 @@ const MainPage = () => {
                     </div>
                 </section>
                 <section id='project-section'>
-                    <h2>Projects I've Worked On</h2>
+                    <h2>Projects</h2>
                     <div>
                         {!isMobile &&
                             <div>
@@ -215,9 +212,23 @@ const MainPage = () => {
                         }
 
                         {isMobile &&
-
-                            <h2>We mobile</h2>
-
+                            <div>
+                                <Card
+                                    title={'React Movies'}
+                                    background={netflix}
+                                    description={'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual'}
+                                />
+                                <Card
+                                    title={'React Indeed'}
+                                    background={indeed}
+                                    description={'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual'}
+                                />
+                                <Card
+                                    title={'Coming Soon'}
+                                    background={placeholder}
+                                    description={'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual'}
+                                />
+                            </div>
                         }
 
 
