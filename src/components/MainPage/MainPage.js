@@ -252,7 +252,7 @@ const MainPage = () => {
                                 <Form.Label>Example textarea</Form.Label>
                                 <Form.Control as="textarea" placeholder="Your message" rows={4} required />
                             </Form.Group>
-                            <button>Submit Me</button>
+                            <Button variant={'contact-light'} text={'Submit'} />
                         </Form>
                     </div>
                 </section>

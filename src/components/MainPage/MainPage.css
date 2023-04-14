@@ -89,6 +89,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .about-icons svg {
@@ -97,7 +98,8 @@ main {
 }
 
 #about-section img {
-    width: 30%;
+    width: 100%;
+    max-width: 375px;
     height: auto;
     box-shadow: 5px 5px 20px white;
 }
@@ -107,7 +109,7 @@ main {
 }
 
 .project-card {
-    margin: 3rem 0;
+    margin: 2rem 0;
     display: flex;
 }
 
@@ -197,23 +199,6 @@ main {
 }
 
 
-/* @media all and (max-width: 1460px) {
-
-    main {
-        padding: 0 150px;
-    }
-
-    #main-banner h1 {
-        font-size: 5rem;
-        margin: 0;
-    }
-
-    #main-banner p {
-        font-size: 1.25rem;
-        width: 70%;
-        margin: 1rem 0;
-    }
-} */
 
 @media all and (max-width: 1250px) {
 
@@ -228,12 +213,10 @@ main {
     }
 
     #about-section img {
-        width: 40%;
-        height: auto;
-        max-height: 300px;
-        box-shadow: 5px 5px 20px white;
+        max-width: 300px;
     }
 }
+
 
 @media all and (max-width: 1000px) {
     main {
@@ -279,6 +262,10 @@ main {
         width: 80%;
     }
 
+    #about-section img {
+        max-width: 250px;
+    }
+
     .about-container {
         flex-direction: column;
     }
@@ -321,6 +308,10 @@ main {
     #main-banner p {
         font-size: .85rem;
         width: 80%;
+    }
+
+    #about-section img {
+        max-width: 175px;
     }
 
 }
