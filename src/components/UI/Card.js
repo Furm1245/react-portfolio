@@ -36,7 +36,7 @@ const Card = (props) => {
                         <h5>MongoDb</h5>
                     </li>
                 </ul>
-                <div>
+                <div >
                     <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
                     <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                 </div>

@@ -5,8 +5,12 @@ body {
 }
 
 main h2 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 3rem;
+    text-align: start;
+    border-bottom: 1px solid white;
+    padding: .5rem 0;
+    width: 65%;
 }
 
 main {
@@ -67,13 +71,6 @@ main {
     margin-bottom: 5rem;
 }
 
-#about-section h2 {
-    text-align: start;
-    border-bottom: 1px solid white;
-    padding: .5rem 0;
-    width: 65%;
-}
-
 .about-container {
     display: flex;
 }
@@ -107,13 +104,6 @@ main {
 
 #project-section {
     position: relative;
-}
-
-#project-section h2 {
-    padding: 1rem 0;
-    text-align: start;
-    border-bottom: 1px solid white;
-    width: 65%;
 }
 
 .project-card {
@@ -165,11 +155,6 @@ main {
     padding-top: 4rem;
 }
 
-#contact-section h2 {
-    text-align: start;
-    border-bottom: 1px solid white;
-    width: 45%;
-}
 
 .contact-container {
     display: flex;
@@ -255,12 +240,43 @@ main {
         padding: 0 100px;
     }
 
+    #main-banner h1 {
+        font-size: 5rem;
+    }
+
+    #main-banner h3 {
+        font-size: 2.5rem;
+    }
+
+    #main-banner p {
+        font-size: 1rem;
+        width: 70%;
+    }
+
 }
 
 @media all and (max-width: 800px) {
 
     main {
         padding: 0 75px;
+    }
+
+    main h2 {
+        width: 80%;
+    }
+
+
+    #main-banner h1 {
+        font-size: 4.5rem;
+    }
+
+    #main-banner h3 {
+        font-size: 2.25rem;
+    }
+
+    #main-banner p {
+        font-size: .85rem;
+        width: 80%;
     }
 
     .about-container {
@@ -288,6 +304,23 @@ main {
 @media all and (max-width: 500px) {
     main {
         padding: 0 15px;
+    }
+
+    main h2 {
+        width: 95%;
+    }
+
+    #main-banner h1 {
+        font-size: 4.5rem;
+    }
+
+    #main-banner h3 {
+        font-size: 2.25rem;
+    }
+
+    #main-banner p {
+        font-size: .85rem;
+        width: 80%;
     }
 
 }

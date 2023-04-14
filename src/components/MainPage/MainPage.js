@@ -12,7 +12,7 @@ import netflix from '../assets/netflix.PNG'
 import indeed from '../assets/indeed.PNG'
 import Card from '../UI/Card'
 import placeholder from '../assets/placeholder.webp'
-// import Carousel from '../UI/Carousel'
+
 
 
 const MainPage = () => {

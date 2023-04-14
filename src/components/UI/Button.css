@@ -8,10 +8,19 @@
     cursor: pointer;
 }
 
+.outline:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 .light {
     padding: 1rem 2rem;
     border-radius: 5px;
     border-color: black;
     cursor: pointer;
+}
+
+.light:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+
 }
