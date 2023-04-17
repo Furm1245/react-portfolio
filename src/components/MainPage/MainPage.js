@@ -53,11 +53,16 @@ const MainPage = () => {
                         <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
                     </div>
                     <div className='banner-buttons'>
-                        <Button variant={'outline'} text={'Check Out My Github'}>
-                            Check Out My Github
-                        </Button>
-                        <Button variant={'light'} text={'View My Projects'}>
-                        </Button>
+                        <a href='https://github.com/Furm1245' target='__blank'>
+                            <Button variant={'outline'} text={'Check Out My Github'}>
+                                Check Out My Github
+                            </Button>
+                        </a>
+
+                        <a href='#project-section'>
+                            <Button variant={'light'} text={'View My Projects'}>
+                            </Button>
+                        </a>
                     </div>
                     <div className='arrow-down' style={{ display: visible ? 'block' : 'none' }}>
                         <a href='#about-section'>
@@ -125,9 +130,7 @@ const MainPage = () => {
                                             <h3>React Movies</h3>
                                         </div>
                                         <div className='project-description'>
-                                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                                Lorem ipsum may be used as a placeholder before final copy is available.
-                                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                            <p>A web app similar to netflix that uses <a href='https://www.themoviedb.org' target='__blank'>The Movie Database API</a>. Display's trending movies and tv shows, and lets you view trailers for them.</p>
                                         </div>
                                         <div className='project-icons'>
                                             <ul className='project-icons'>
@@ -141,8 +144,8 @@ const MainPage = () => {
 
                                         </div>
                                         <div>
-                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
-                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                            <a href='https://github.com/Furm1245/netflix' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
+                                            <a href='https://react-movies-75d11.web.app' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,9 +155,7 @@ const MainPage = () => {
                                             <h3>React Indeed</h3>
                                         </div>
                                         <div className='project-description'>
-                                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                                Lorem ipsum may be used as a placeholder before final copy is available.
-                                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                                            <p>Based on the Indeed Website. It has majority of the maion features such as applying, posting jobs, and viewing applicants/applications. Its also a complete CRUD application.</p>
                                         </div>
                                         <ul className='project-icons'>
                                             <li>
@@ -169,11 +170,10 @@ const MainPage = () => {
                                             <li>
                                                 <h5>MongoDb</h5>
                                             </li>
-
                                         </ul>
                                         <div>
-                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
-                                            <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                            <a href='https://github.com/Furm1245/indeed' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
+                                            <a href='https://rindeed.firebaseapp.com' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                                         </div>
                                     </div>
                                     <div className='project-image'>
@@ -193,9 +193,6 @@ const MainPage = () => {
                                                 Lorem ipsum may be used as a placeholder before final copy is available.
                                                 In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
                                         </div>
-                                        <div>
-                                            <h5>project links</h5>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -207,12 +204,12 @@ const MainPage = () => {
                                 <Card
                                     title={'React Movies'}
                                     background={netflix}
-                                    description={'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual'}
+                                    description={'A web app similar to netflix that uses The Movie Database API. Displays trending movies and tv shows, and lets you view trailers for them.'}
                                 />
                                 <Card
                                     title={'React Indeed'}
                                     background={indeed}
-                                    description={'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual'}
+                                    description={'Based on the Indeed Website. It has majority of the maion features such as applying, posting jobs, and viewing applicants/applications. Its also a complete CRUD application.'}
                                 />
                                 <Card
                                     title={'Coming Soon'}
@@ -230,26 +227,27 @@ const MainPage = () => {
                     <div className='contact-container'>
                         <div className='contact-text'>
                             <h3>Lorem ipsum</h3>
-                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                                Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                            <p> Feel free to email me at  <a href="mailto:walkerfurman@yahoo.com" target="__blank">
+                                walkerfurman@yahoo.com
+                            </a> or fill out the form if you have any questions about anything.
+                                Im also currently open to all oppurtunities right now.</p>
                         </div>
                         <Form>
                             <Row>
                                 <Col>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-3" >
                                         <Form.Label>First Name</Form.Label>
-                                        <Form.Control type="text" placeholder="your name" />
+                                        <Form.Control type="text" placeholder="your first name" />
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-3" >
                                         <Form.Label>Email address</Form.Label>
                                         <Form.Control type="email" placeholder="name@example.com" required />
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Example textarea</Form.Label>
+                            <Form.Group className="mb-3" >
                                 <Form.Control as="textarea" placeholder="Your message" rows={4} required />
                             </Form.Group>
                             <Button variant={'contact-light'} text={'Submit'} />
@@ -259,7 +257,7 @@ const MainPage = () => {
             </main>
             <ul className='social-icons'>
                 <a href='https://github.com/Furm1245' target='__blank'><li><FontAwesomeIcon icon={faGithub} /></li></a>
-                <a href='https://www.linkedin.com/in/furman-walker-87b483234/?trk=public-profile-join-page' target='__blank'> <li><FontAwesomeIcon icon={faLinkedin} /></li></a>
+                <a href='https://www.linkedin.com/in/furman-walker-87b483234/?trk=public-profile-join-page' target='__blank'><li><FontAwesomeIcon icon={faLinkedin} /></li></a>
                 <a href='https://www.facebook.com' target='__blank'><li><FontAwesomeIcon icon={faFacebook} /></li></a>
             </ul>
         </>

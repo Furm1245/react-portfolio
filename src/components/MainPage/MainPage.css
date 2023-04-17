@@ -5,7 +5,6 @@ body {
 }
 
 main h2 {
-    /* text-align: center; */
     font-size: 3rem;
     text-align: start;
     border-bottom: 1px solid white;
@@ -29,7 +28,7 @@ main {
 }
 
 #main-banner h1 {
-    font-size: 6rem;
+    font-size: clamp(50px, 8vw, 80px);
     margin: 0;
 }
 
@@ -152,6 +151,17 @@ main {
     color: gold;
 }
 
+.project-description a {
+    color: gold;
+    padding-right: 0;
+    text-decoration: none;
+}
+
+
+.project-description a:hover {
+    text-decoration: underline;
+}
+
 
 #contact-section {
     padding-top: 4rem;
@@ -166,6 +176,15 @@ main {
 .contact-text {
     width: 100%;
     padding: 1rem;
+}
+
+.contact-text a {
+    color: gold;
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
 }
 
 #contact-section form {
@@ -223,9 +242,6 @@ main {
         padding: 0 100px;
     }
 
-    #main-banner h1 {
-        font-size: 5rem;
-    }
 
     #main-banner h3 {
         font-size: 2.5rem;
@@ -246,11 +262,6 @@ main {
 
     main h2 {
         width: 80%;
-    }
-
-
-    #main-banner h1 {
-        font-size: 4.5rem;
     }
 
     #main-banner h3 {
@@ -285,6 +296,7 @@ main {
     .contact-text {
         width: 100%;
         padding: 0;
+        margin-bottom: 1rem;
     }
 }
 
@@ -297,12 +309,8 @@ main {
         width: 95%;
     }
 
-    #main-banner h1 {
-        font-size: 4.5rem;
-    }
-
     #main-banner h3 {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
     }
 
     #main-banner p {
@@ -314,4 +322,13 @@ main {
         max-width: 175px;
     }
 
+    /* .banner-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-banner button {
+        margin-right: 0;
+        margin-bottom: .5rem;
+    } */
 }
