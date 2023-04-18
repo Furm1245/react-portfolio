@@ -155,7 +155,7 @@ const MainPage = () => {
                                             <h3>React Indeed</h3>
                                         </div>
                                         <div className='project-description'>
-                                            <p>Based on the Indeed Website. It has majority of the maion features such as applying, posting jobs, and viewing applicants/applications. Its also a complete CRUD application.</p>
+                                            <p>Based on the Indeed Website, It has majority of the main features such as applying, posting jobs, and viewing applicants/applications. It's also a complete CRUD application.</p>
                                         </div>
                                         <ul className='project-icons'>
                                             <li>
@@ -205,11 +205,13 @@ const MainPage = () => {
                                     title={'React Movies'}
                                     background={netflix}
                                     description={'A web app similar to netflix that uses The Movie Database API. Displays trending movies and tv shows, and lets you view trailers for them.'}
+                                    icons={['React Js', 'HTML', 'Javascript', 'CSS']}
                                 />
                                 <Card
                                     title={'React Indeed'}
                                     background={indeed}
                                     description={'Based on the Indeed Website. It has majority of the maion features such as applying, posting jobs, and viewing applicants/applications. Its also a complete CRUD application.'}
+                                    icons={['React Js', 'HTML', 'Javascript', 'CSS', 'Node Js', 'MongoDB']}
                                 />
                                 <Card
                                     title={'Coming Soon'}

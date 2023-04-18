@@ -22,20 +22,13 @@ const Card = (props) => {
                 <div>
                     <p>{props.description}</p>
                 </div>
-                <ul className='card-icons'>
-                    <li>
-                        <h5>React Js</h5>
-                    </li>
-                    <li>
-                        <h5>HTML/Javascript/CSS</h5>
-                    </li>
-                    <li>
-                        <h5>Node Js</h5>
-                    </li>
-                    <li>
-                        <h5>MongoDb</h5>
-                    </li>
-                </ul>
+                {props.icons && props.icons.length > 1 &&
+                    <ul className='card-icons'>
+                        {props.icons.map(icon => (
+                            <li key={icon}>{icon}</li>
+                        ))}
+                    </ul>
+                }
                 <div >
                     <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faGithub} /></a>
                     <a href='https://github.com/Furm1245' target='__blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
