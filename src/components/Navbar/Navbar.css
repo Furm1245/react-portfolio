@@ -7,7 +7,7 @@
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    height: 8vh;
+    height: 7vh;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
     background: radial-gradient(ellipse at top, #0d1d31 0%, #0c0d13 100%);
     z-index: 15;
@@ -67,7 +67,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: rgb(12, 12, 12);
+        background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
         color: white;
         height: 30vh;
         visibility: hidden;
@@ -82,6 +82,6 @@
         z-index: 15;
         visibility: visible;
         transform: translateX(0);
-        /* Add this line to translate the links horizontally */
+        /* translate the links horizontally */
     }
 }

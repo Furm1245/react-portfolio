@@ -14,10 +14,10 @@ const Navbar = () => {
         setShow(!show)
         if (!show) {
             if (window.innerWidth <= 768) {
-                document.body.classList.add('body-lock'); // Add body-lock class to lock scrolling if screen is mobile view
+                document.body.classList.add('body-lock'); //  lock scrolling if screen is mobile view
             }
         } else {
-            document.body.classList.remove('body-lock'); // Remove body-lock class to unlock scrolling
+            document.body.classList.remove('body-lock'); // unlock scrolling
         }
     }
 
