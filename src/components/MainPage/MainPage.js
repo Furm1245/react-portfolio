@@ -50,7 +50,7 @@ const MainPage = () => {
                         <h3>FrontEnd Developer</h3>
                     </div>
                     <div>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to. </p>
                     </div>
                     <div className='banner-buttons'>
                         <a href='https://github.com/Furm1245' target='__blank'>
@@ -228,7 +228,7 @@ const MainPage = () => {
                     <h2>Contact Me</h2>
                     <div className='contact-container'>
                         <div className='contact-text'>
-                            <h3>Lorem ipsum</h3>
+                            <h3>Get In Touch!</h3>
                             <p> Feel free to email me at  <a href="mailto:walkerfurman@yahoo.com" target="__blank">
                                 walkerfurman@yahoo.com
                             </a> or fill out the form if you have any questions about anything.
@@ -259,7 +259,7 @@ const MainPage = () => {
             </main>
             <ul className='social-icons'>
                 <a href='https://github.com/Furm1245' target='__blank'><li><FontAwesomeIcon icon={faGithub} /></li></a>
-                <a href='https://www.linkedin.com/in/furman-walker-87b483234/?trk=public-profile-join-page' target='__blank'><li><FontAwesomeIcon icon={faLinkedin} /></li></a>
+                <a href='https://www.linkedin.com/in/furman-walker' target='__blank'><li><FontAwesomeIcon icon={faLinkedin} /></li></a>
                 <a href='https://www.facebook.com' target='__blank'><li><FontAwesomeIcon icon={faFacebook} /></li></a>
             </ul>
         </>
